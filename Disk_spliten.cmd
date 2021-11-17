@@ -6,7 +6,7 @@ echo sel disk %disk% > spliten.dat
 echo clean >> spliten.dat
 
 set /p size=size:
-echo create primary size= %size% >> spliten.dat
+echo create partition primary size= %size% >> spliten.dat
 echo format fs = ntfs quick >> spliten.dat
 
 
