@@ -1,7 +1,7 @@
 @echo off
 echo welkom to my cmd mode
 echo wat wil u gebruiken?
-echo 1 : set up
+echo 1 : Restore
 echo 2 : Formeren
 echo 3 : Disk spliten
 echo 4 : delet file
@@ -24,6 +24,7 @@ set /p cijfer=cijfer:
         echo Download .bat file
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/formeren.cmd -OutFile formeren.cmd"
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Disk_spliten.cmd -OutFile Disk_spliten.cmd"
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/start.bat -OutFile start.cmd"
         echo done 
         :: sluit af CMD
         if %cijfer%==1 (
