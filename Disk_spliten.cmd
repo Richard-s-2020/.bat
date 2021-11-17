@@ -1,4 +1,3 @@
-@echo off
 cd C:\Windows\System32\Custom formeren
 DISKPART /s list_diskpart.txt
 echo "writch the disk that you whant to formeren."
@@ -22,6 +21,8 @@ echo active >> spliten.dat
 echo create partition primary >> spliten.dat
 echo format fs = ntfs quick >> spliten.dat
 echo assign letter= %cijfer2% >> spliten.dat
+
+DISKPART /s spliten.dat
 
 pause
 end
