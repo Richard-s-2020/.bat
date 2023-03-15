@@ -1,6 +1,6 @@
 cd C:\Windows\System32\Custom formeren
 DISKPART /s list_diskpart.txt
-echo "writch the disk that you whant to formeren."
+echo "Choose the disk you want to  formeren."
 set /p disk=disk:
 echo sel disk %disk% > spliten.dat
 echo clean >> spliten.dat
