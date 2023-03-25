@@ -1,4 +1,4 @@
-cd C:\Windows\System32\Custom formeren
+cd C:\Windows\RS_Remote
 DISKPART /s list_diskpart.txt
 echo "Choose the disk you want to  formeren."
 set /p disk=disk:

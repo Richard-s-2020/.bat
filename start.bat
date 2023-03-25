@@ -1,7 +1,7 @@
 @echo off
 echo welkom to my cmd mode
 echo wat wil u gebruiken?
-echo 1 : Restore
+echo 1 : Restore Files
 echo 2 : Formeren
 echo 3 : Disk spliten
 echo 4 : delet file
@@ -12,8 +12,8 @@ set /p cijfer=cijfer:
 :loop (
     if %cijfer%==1 (
     @echo off
-        md "Custom formeren"
-        cd C:\Windows\System32\Custom formeren\
+        md "Custom Format"
+        cd C:\Windows\RS_Remote\
 
         :: bestand van .dat
         echo list disk > list_diskpart.txt
@@ -22,7 +22,7 @@ set /p cijfer=cijfer:
 
         :: Formeren
         echo Download .bat file
-        powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/formeren.cmd -OutFile formeren.cmd"
+        powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Format.cmd -OutFile Format.cmd"
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Disk_spliten.cmd -OutFile Disk_spliten.cmd"
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/start.bat -OutFile start.cmd"
         
@@ -41,19 +41,19 @@ goto :loop
 )
 
 if %cijfer%==2 (
-cd C:\Windows\System32\Custom formeren
-formeren.cmd
+cd C:\Windows\RS_Remote
+Format.cmd
 ) 
 
 if %cijfer%==3 (
-cd C:\Windows\System32\Custom formeren
+cd C:\Windows\RS_Remote
 Disk_spliten.cmd
 )
 
 if %cijfer%==4 (
-    cd C:\Windows\System32
+    cd C:\Windows\
     echo are you sure you whant to delet it?
-    Rmdir /S "Custom formeren"
+    Rmdir /S "RS_Remote"
 ) 
 
 if %cijfer%==5 (

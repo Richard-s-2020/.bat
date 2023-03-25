@@ -1,6 +1,6 @@
 @echo off
 
-cd C:\Windows\System32\Custom formeren
+cd C:\Windows\RS_Remote
 DISKPART /s list_diskpart.txt
 echo "writch the disk that you whant to formeren."
 set /p disk=disk:
