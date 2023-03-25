@@ -2,9 +2,9 @@
 echo welkom to my cmd mode
 echo wat wil u gebruiken?
 echo 1 : Restore Files
-echo 2 : Formeren
-echo 3 : Disk spliten
-echo 4 : delet file
+echo 2 : Format the disk
+echo 3 : slit the Disk in 2
+echo 4 : delet RS_Remote file
 echo 5 : close
 set /p cijfer=cijfer:
 ::set up
@@ -12,7 +12,8 @@ set /p cijfer=cijfer:
 :loop (
     if %cijfer%==1 (
     @echo off
-        md "Custom Format"
+        cd C:\Windows\
+        md "RS_Remote"
         cd C:\Windows\RS_Remote\
 
         :: bestand van .dat
@@ -30,9 +31,10 @@ set /p cijfer=cijfer:
         :: sluit af CMD
         if %cijfer%==1 (
         pause()
-        taskkill /F /IM cmd.exe
+        cls
             )
         )
+        C:\Windows\RS_Remote\start.cmd
     
 )
 
