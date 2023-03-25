@@ -24,7 +24,8 @@ set /p cijfer=cijfer:
         echo Download .bat file
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/formeren.cmd -OutFile formeren.cmd"
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Disk_spliten.cmd -OutFile Disk_spliten.cmd"
-powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/start.bat -OutFile start.cmd"
+        powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/start.bat -OutFile start.cmd"
+        
         echo done 
         :: sluit af CMD
         if %cijfer%==1 (
