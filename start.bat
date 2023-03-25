@@ -1,7 +1,7 @@
 @echo off
 echo welkom to my cmd mode
 echo wat wil u gebruiken?
-echo 1 : Restore Files
+echo 1 : Restore Files and update files.
 echo 2 : Format the disk
 echo 3 : slit the Disk in 2
 echo 4 : delet RS_Remote file
@@ -15,6 +15,7 @@ set /p cijfer=cijfer:
         cd C:\Windows\
         md "RS_Remote"
         cd C:\Windows\RS_Remote\
+        del "C:\Windows\RS_Remote\*cmd" /s /f /q
 
         :: bestand van .dat
         echo list disk > list_diskpart.txt
