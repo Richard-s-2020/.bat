@@ -19,4 +19,4 @@ DISKPART /s Driver.dat
 
 
 pause
-end
+C:\Windows\RS_Remote\Main.cmd 
