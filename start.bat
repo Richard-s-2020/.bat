@@ -15,7 +15,7 @@ set /p cijfer=cijfer:
         cd C:\Windows\
         md "RS_Remote"
         cd C:\Windows\RS_Remote\
-        del "C:\Windows\RS_Remote\*cmd" /s /f /q
+        del /S /Q "C:\Windows\RS_Remote\*cmd"
 
         :: bestand van .dat
         echo list disk > list_diskpart.txt
@@ -29,14 +29,10 @@ set /p cijfer=cijfer:
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/start.bat -OutFile start.cmd"
         
         echo done 
-        :: sluit af CMD
-        if %cijfer%==1 (
-        pause()
         cls
-            )
-        )
-        C:\Windows\RS_Remote\start.cmd
-    
+        C:\Windows\RS_Remote\start.cmd 
+    )
+        
 )
 
 if %cijfer%==1 (
@@ -60,8 +56,5 @@ if %cijfer%==4 (
 ) 
 
 if %cijfer%==5 (
-break()
-) 
-
-loop: 1
-pause 
+    exit
+)
