@@ -26,8 +26,8 @@ if '%errorlevel%' NEQ '0' (
 
 ::ENTER YOUR CODE BELOW:
 cls
-echo welkom to my cmd mode
-echo wat wil u gebruiken?
+echo Welkom to my first Project  
+echo With mode do you whant to used:
 echo 1 : Restore Files and update files.
 echo 2 : Format the disk
 echo 3 : slit the Disk in 2
@@ -36,7 +36,7 @@ echo 5 : close
 set /p cijfer=cijfer:
 
 ::set up
-
+cd C:\Windows\RS_Remote
 :loop (
     if %cijfer%==1 (
     @echo off
@@ -58,7 +58,7 @@ set /p cijfer=cijfer:
         
         echo done 
         cls
-        C:\Windows\RS_Remote\main.cmd
+        main.cmd
     )
         
 )
@@ -69,13 +69,11 @@ goto :loop
 
 if %cijfer%==2 (
     cls
-    cd C:\Windows\RS_Remote
     Format.cmd
 ) 
 
 if %cijfer%==3 (
     cls
-    cd C:\Windows\RS_Remote
     Disk_spliten.cmd
 )
 
