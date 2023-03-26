@@ -54,7 +54,7 @@ set /p cijfer=cijfer:
         echo Download .bat file
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Format.cmd -OutFile Format.cmd"
         powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Disk_spliten.cmd -OutFile Disk_spliten.cmd"
-        powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Main.bat -OutFile main.cmd"
+        powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Richard-s-2020/.bat/main/Main.bat -OutFile Main.cmd"
         
         echo done 
         cls
