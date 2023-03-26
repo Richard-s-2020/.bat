@@ -1,0 +1,4 @@
+Versie: 1
+SerieNummer: 0.1
+Locatie: C:\Windows\RS_Remote
+Name: Format , Disk_Spliten, Settings
