@@ -58,7 +58,7 @@ set /p cijfer=cijfer:
         
         echo done 
         cls
-        C:\Windows\RS_Remote\start.cmd 
+        C:\Windows\RS_Remote\main.cmd
     )
         
 )
