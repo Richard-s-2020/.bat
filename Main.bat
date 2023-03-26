@@ -25,7 +25,7 @@ if '%errorlevel%' NEQ '0' (
 ::--------------------------------------
 
 ::ENTER YOUR CODE BELOW:
-
+cls
 echo welkom to my cmd mode
 echo wat wil u gebruiken?
 echo 1 : Restore Files and update files.
