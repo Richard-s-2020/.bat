@@ -18,5 +18,5 @@ echo assign letter= %cijfer% >> Driver.dat
 DISKPART /s Driver.dat
 
 
-pause
+cls
 C:\Windows\RS_Remote\Main.cmd 
